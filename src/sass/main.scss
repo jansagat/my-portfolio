@@ -1,8 +1,9 @@
 //colors
-$orange: #e45028;
-$yellow: #f9b43b;
-$black: #2f3234;
-$red: #e35028;
+$green: #00bfa5;
+$darkGreen: #009688;
+$darkBlue: #455a64;
+$black: #373e42;
+$white: #ffffff;
 
 // resolutions
 $large: 1800px;
@@ -12,12 +13,24 @@ $tablets: 768px;
 $phones: 480px;
 
 //normalize
-@import "_misc/normalize.scss";
+@import "_misc/normalize";
 
 // media
+@import "_misc/media";
 
 // setups
 @import "_misc/fonts";
+@import "_misc/layout";
+@import "_misc/mixins";
+@import "_misc/animations";
 
 // blocks
 @import "blocks/welcome";
+@import "blocks/button";
+@import "blocks/menu";
+@import "blocks/section";
+@import "blocks/socials";
+@import "blocks/user-profile";
+@import "blocks/copyright";
+@import "blocks/signin";
+@import "blocks/form";

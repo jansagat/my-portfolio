@@ -1,0 +1,26 @@
+.socials__block {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.socials__icon {
+  width: 30px;
+  height: 20px;
+  transition: all .5s;
+
+  &_color_green {
+    fill: rgba($green, .5);
+  }
+
+  &_color_green:hover {
+    fill: $green;
+  }
+}
+
+.socials__item {
+  margin-right: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

@@ -81,8 +81,8 @@
 
 @font-face {
   font-family: 'bernier_distressedregular';
-  src: url('../fonts/bernier_distressed-webfont.woff2') format('woff2'),
-  url('../fonts/bernier_distressed-webfont.woff') format('woff');
+  src: url('../fonts/BERNIERDistressed-Regular.woff2') format('woff2'),
+  url('../fonts/BERNIERDistressed-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -90,8 +90,8 @@
 
 @font-face {
   font-family: 'bernier_regularregular';
-  src: url('../fonts/bernier_regular-webfont.woff2') format('woff2'),
-  url('../fonts/bernier_regular-webfont.woff') format('woff');
+  src: url('../fonts/BERNIERRegular-Regular.woff2') format('woff2'),
+  url('../fonts/BERNIERRegular-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -99,8 +99,8 @@
 
 @font-face {
   font-family: 'bernier_shaderegular';
-  src: url('../fonts/bernier_shade-webfont.woff2') format('woff2'),
-  url('../fonts/bernier_shade-webfont.woff') format('woff');
+  src: url('../fonts/BERNIERShade-Regular.woff2') format('woff2'),
+  url('../fonts/BERNIERShade-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -118,8 +118,11 @@
   }
 }
 
-@mixin roboto($style: regular) {
-  font-family: 'robotoregular', Helvetica, sans-serif;
+@mixin roboto($style: null) {
+
+  @if $style == null or $style == regular {
+    font-family: 'robotoregular', Helvetica, sans-serif;
+  }
 
   @if $style == bold {
     font-family: 'robotobold', Helvetica, sans-serif;

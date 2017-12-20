@@ -1,0 +1,34 @@
+.user-profile__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-profile__pic {
+  max-width: 145px;
+  max-height: 145px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.user-profile__name {
+  @include roboto(medium);
+  font-size: 28px;
+  color: $darkBlue;
+}
+
+.user-profile__desc {
+  @include roboto();
+  font-size: 16px;
+  color: $darkBlue;
+  opacity: .8;
+}
+
+.user-profile__socials {
+  display: flex;
+}

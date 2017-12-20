@@ -1,0 +1,40 @@
+.menu__item {
+  flex: 1;
+
+  &_color {
+
+    &_green {
+      border-right: 2px solid rgba(#dee3e7, .5);
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}
+
+.menu__link {
+  @include roboto(medium);
+  font-size: 16px;
+  color: $white;
+  text-decoration: none;
+  transition: all .5s;
+
+  &_color {
+    &_green {
+      background: #00bfa5;
+      background-size: cover;
+      border: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        background: $darkGreen;
+      }
+    }
+  }
+}

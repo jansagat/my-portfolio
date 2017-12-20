@@ -5,8 +5,9 @@ module.exports = {
 	build : path.join(__dirname, '../dist/'),
     pages : {
         template : path.join(__dirname, '../src/template/'),
-        pages    : path.join(__dirname, '../src/template/pages/')
-        // index    : path.join(__dirname, '../src/template/pages/index/') ,
+        pages    : path.join(__dirname, '../src/template/pages/'),
+        // index    : path.join(__dirname, '../src/template/pages/index/'),
+        welcome    : path.join(__dirname, '../src/template/pages/welcome/'),
         // blog     : path.join(__dirname, '../src/template/pages/blog/')
     }
 }

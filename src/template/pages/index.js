@@ -1,2 +1,1 @@
-import '../../sass/main.scss'
-import '../../fonts/'
+import '../../sass/main.scss';
