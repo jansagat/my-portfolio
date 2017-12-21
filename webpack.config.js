@@ -23,7 +23,7 @@ module.exports = {
     entry: {
         index: proj_path.pages.pages + '/index.js',
         welcome: proj_path.pages.welcome + '/welcome.js',
-        // main       : proj_path.src            + '/js/main.js'
+        blog: proj_path.pages.blog + '/blog.js'
     },
     // Output dirrectory
     output: {
@@ -56,14 +56,19 @@ module.exports = {
             template: proj_path.pages.pages + '/index.pug'
         }),
         new htmlWebpackPlugin({
-            filename : 'welcome.html'        ,
-            chunks   : ['welcome', 'common'] ,
-            template : proj_path.pages.welcome + '/welcome.pug'
+            filename: 'welcome.html',
+            chunks: ['welcome', 'common'],
+            template: proj_path.pages.welcome + '/welcome.pug'
         }),
         new htmlWebpackPlugin({
-            filename : 'welcome-auth.html'        ,
-            chunks   : ['welcome', 'common'] ,
-            template : proj_path.pages.welcome + '/welcome-auth.pug'
+            filename: 'welcome-auth.html',
+            chunks: ['welcome', 'common'],
+            template: proj_path.pages.welcome + '/welcome-auth.pug'
+        }),
+        new htmlWebpackPlugin({
+            filename: 'blog.html',
+            chunks: ['blog', 'common'],
+            template: proj_path.pages.blog + '/blog.pug'
         }),
         new ExtractTextPlugin('./css/style.css'),
         // new webpack.ProvidePlugin({

@@ -1,6 +1,12 @@
 .menu__item {
   flex: 1;
 
+  &_type {
+    &_fixed-margin {
+      flex: initial;
+      margin: 25px;
+    }
+  }
   &_color {
 
     &_green {
@@ -35,6 +41,10 @@
       &:hover {
         background: $darkGreen;
       }
+    }
+
+    &_white:hover {
+      color: $green;
     }
   }
 }

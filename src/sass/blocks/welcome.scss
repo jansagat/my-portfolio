@@ -7,7 +7,7 @@
 
 .welcome__block {
   width: 100%;
-  max-width: 380px;
+  max-width: 379px;
   border-radius: 4px;
   overflow: hidden;
   background: rgba(#fff, .85);
@@ -23,4 +23,9 @@
   position: absolute;
   top: 25px;
   right: 20px;
+}
+
+.welcome__copyright {
+  position: absolute;
+  bottom: 30px;
 }

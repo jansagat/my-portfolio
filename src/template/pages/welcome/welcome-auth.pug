@@ -8,7 +8,7 @@ html
             section.section.welcome
                 .welcome__block
                     .welcome__signin.signin.signin__content
-                        h2.signin__title Авторизуйтесь
+                        h2.title__subtitle.title__subtitle_type_row Авторизуйтесь
                         form.form.signin__form(action='' method='post' id='signin-form')
                             label.form__label.form__label_type_text
                                 span.form__input-icon
@@ -40,5 +40,5 @@ html
                             a(href='#').menu__link.menu__link_color_green На главную
                         li().menu__item.menu__item_color_green
                             button(type='submit' form='signin-form').menu__link.menu__link_color_green Войти
-                .copyright
+                .copyright.welcome__copyright
                     span &copy; Владимир Астахов | создано с любовью в LoftSchool | 2017

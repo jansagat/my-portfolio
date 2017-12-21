@@ -1,0 +1,25 @@
+.triangle {
+  position: relative;
+}
+
+.triangle__left {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7vw 0 0 50vw;
+  border-color: transparent transparent transparent white;
+  position: absolute;
+  top: -7vw;
+  left: 0;
+}
+
+.triangle__right {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 7vw 50vw;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  top: -7vw;
+  right: 0;
+}
