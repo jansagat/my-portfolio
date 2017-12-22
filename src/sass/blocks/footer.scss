@@ -1,7 +1,15 @@
-.footer__row {
-  width: 100%;
+.footer {
   background: rgba($black, .85);
   @include cover();
+  width: 100%;
+}
+
+.footer__container {
+  display: block;  
+}
+
+.footer__row {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -12,6 +20,7 @@
     width: 100%;
     height: 1px;
     background: #666c6e;
+    background-size: cover;
   }
 
   &:last-child:after {
