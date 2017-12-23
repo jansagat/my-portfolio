@@ -1,4 +1,4 @@
-.user-profile__content {
+.user-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,21 +12,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
   margin-bottom: 10px;
+
+  &_margin_top {
+    margin-top: 40px;
+  }
 }
 
 .user-profile__name {
   @include roboto(medium);
-  font-size: 28px;
-  color: $darkBlue;
+  font-size: 35px;
+  color: $white;
+
+  &_type {
+    &_welcome {
+      font-size: 28px;
+      color: $darkBlue;
+    }
+  }
 }
 
 .user-profile__desc {
-  @include roboto();
+  @include roboto(light);
   font-size: 16px;
-  color: $darkBlue;
+  color: $white;
   opacity: .8;
+
+  &_type {
+    &_welcome {
+      @include roboto();
+      color: $darkBlue;
+    }
+  }
 }
 
 .user-profile__socials {

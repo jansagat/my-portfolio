@@ -1,7 +1,52 @@
 .header {
   background: url(../img/bg/header-bg.jpg);
   @include cover();
-  min-height: 401px;
+  max-height: 601px;
+  height: 100%;
+  position: relative;
+
+  &_type_blog {
+    background: url(../img/bg/blog-bg.jpg);
+    @include cover();
+    max-height: 401px;
+  }
+}
+
+.header__overlay {
+  &:after {
+    content: '';
+    background-color: rgba(1, 102, 114, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.header__container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 100%;
+}
+
+.header__svg-icon {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  fill: #fff;
+  fill-opacity: 0.07;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  &_type_middle {
+    width: 356px;
+    height: 230px;
+  }
 }
 
 .header__socials {
@@ -11,18 +56,15 @@
   left: 30px;
 }
 
-.header__container {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .header__user {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+
+  &_move_top {
+    margin-top: -70px;
+  }
 }
 
 .header__hamburger-button {
@@ -39,4 +81,17 @@
 
 .header__desc {
   color: $white;
+}
+
+.header__arrow-down-icon {
+  width: 30px;
+  height: 18px;
+  fill: $white;
+  fill-opacity: .7;
+}
+
+.header__arrow-down-link {
+  display: block;
+  position: absolute;
+  bottom: 70px;
 }

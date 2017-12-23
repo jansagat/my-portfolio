@@ -7,6 +7,7 @@ module.exports = {
         template: path.join(__dirname, '../src/template/'),
         pages: path.join(__dirname, '../src/template/pages/'),
         welcome: path.join(__dirname, '../src/template/pages/welcome/'),
-        blog: path.join(__dirname, '../src/template/pages/blog/')
+        blog: path.join(__dirname, '../src/template/pages/blog/'),
+        about: path.join(__dirname, '../src/template/pages/about/')
     }
 }

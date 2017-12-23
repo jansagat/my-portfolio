@@ -11,6 +11,10 @@
   position: absolute;
   top: -7vw;
   left: 0;
+
+  &_color_beige {
+    border-color: transparent transparent transparent #efeee9;
+  }
 }
 
 .triangle__right {
@@ -22,4 +26,8 @@
   position: absolute;
   top: -7vw;
   right: 0;
+
+  &_color_beige {
+    border-color: transparent transparent #eeebdf transparent;
+  }
 }

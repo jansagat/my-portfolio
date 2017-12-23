@@ -5,7 +5,7 @@ html
         title Welcome to my portfolio
     body
         .wrapper
-            header.header
+            header.header.header_type_blog
                 .container.header__container
                     ul.header__socials.socials.socials__block
                         li.socials__item
@@ -23,10 +23,12 @@ html
                     a.header__hamburger-button(href='#')
                         span.hamburger.hamburger__button
                     .header__user.user-profile
-                        .user-profile__pic
+                        .user-profile__pic.user-profile__pic_margin_top
                             img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
                         span.header__title.title Блог
                         span.header__desc Статьи, которые я написал
+                    svg.header__svg-icon.header__svg-icon_type_middle
+                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'blog_header')
             .content
                 .triangle
                     .triangle__left

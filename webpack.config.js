@@ -23,7 +23,8 @@ module.exports = {
     entry: {
         index: proj_path.pages.pages + '/index.js',
         welcome: proj_path.pages.welcome + '/welcome.js',
-        blog: proj_path.pages.blog + '/blog.js'
+        blog: proj_path.pages.blog + '/blog.js',
+        about: proj_path.pages.about + '/about.js'
     },
     // Output dirrectory
     output: {
@@ -69,6 +70,11 @@ module.exports = {
             filename: 'blog.html',
             chunks: ['blog', 'common'],
             template: proj_path.pages.blog + '/blog.pug'
+        }),
+        new htmlWebpackPlugin({
+            filename: 'about.html',
+            chunks: ['about', 'common'],
+            template: proj_path.pages.about + '/about.pug'
         }),
         new ExtractTextPlugin('./css/style.css'),
         // new webpack.ProvidePlugin({
@@ -130,20 +136,20 @@ module.exports = {
                 options: {
                     name: './assets/fonts/[name].[ext]'
                 }
-            },
-            {
-                test: /\.css$/,
-                loader: 'postcss-loader',
-                options: {
-                    ident: 'postcss',
-                    plugins: (loader) => [
-                        require('postcss-import')({root: loader.resourcePath}),
-                        require('postcss-cssnext')(),
-                        require('autoprefixer')(),
-                        require('cssnano')()
-                    ]
-                }
             }
+            // {
+            //     test: /\.css$/,
+            //     loader: 'postcss-loader',
+            //     options: {
+            //         ident: 'postcss',
+            //         plugins: (loader) => [
+            //             require('postcss-import')({root: loader.resourcePath}),
+            //             require('postcss-cssnext')(),
+            //             require('autoprefixer')(),
+            //             require('cssnano')()
+            //         ]
+            //     }
+            // }
         ]
     }
 }
