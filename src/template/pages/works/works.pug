@@ -1,0 +1,135 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Welcome to my portfolio
+    body
+        .wrapper
+            header.header.header__overlay
+                .container.header__container
+                    svg.header__svg-icon
+                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'portfolio_header')
+                    ul.header__socials.socials.socials__block
+                        li.socials__item
+                            a(href='#').socials__link
+                                svg.socials__icon.socials__icon_color_white
+                                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'vk')
+                        li.socials__item
+                            a(href='#').socials__link
+                                svg.socials__icon.socials__icon_color_white
+                                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'github')
+                        li.socials__item
+                            a(href='#').socials__link
+                                svg.socials__icon.socials__icon_color_white
+                                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in')
+                    a.header__hamburger-button(href='#')
+                        span.hamburger.hamburger__button
+                    .header__user.header__user_move_top.user-profile
+                        .user-profile__pic
+                            img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
+                        span.user-profile__name Владимир Астахов
+                        span.user-profile__desc Личный сайт веб разработчика
+                    a.header__arrow-down-link(href='#')
+                        svg.header__arrow-down-icon
+                            use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'arrow_down')
+            section.section.works
+                .triangle
+                    .triangle__left.triangle__left_works_page
+                    .triangle__right.triangle__right_works_page
+                .works__header
+                    svg.works__svg
+                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'works_header')
+                    span.works__title Мои работы
+                .container.works__container
+                    ul.slider.works__slider
+                        li.slider__list
+                            .slider__desc
+                                .slider__title
+                                    span Сайт школы онлайн образования
+                                .slider__stack HTML, css, javascript
+                                a.slider__link(href="#")
+                                    svg.slider__link-svg
+                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'link')
+                                    span Посмотреть сайт
+                            .slider__pic
+                                img.slider__img(src=require('../../../img/public/slider/1.png') alt='my works')
+                            .slider__arrows
+                                .slider__down-arrow
+                                    svg.slider__svg-arrow-down
+                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'portf_arrow_down')
+                                    img.slider__arrow-background(src=require('../../../img/public/slider/2.jpg') alt='down')
+                                .slider__up-arrow
+                                    svg.slider__svg-arrow-up
+                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'portf_arrow_up')
+                                    img.slider__arrow-background(src=require('../../../img/public/slider/3.jpg') alt='up')
+            section.section.review
+                .review__header
+                    svg.review__svg
+                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'about_header')
+                    .review__title
+                        span Что обо мне говорят
+                ul.review__list
+                    li.review__item
+                        svg.review__quotes
+                           use(xlink:href=require('../../../img/svg/quotes.svg') + '#' + 'quotes')
+                        div.review__text
+                            p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                        .review__user
+                            .review__user-pic
+                                img.review__user-img(src=require('../../../img/public/review-user1.jpg') alt='review user avatar')
+                            span.review__user-name Ковальчук Дмитрий
+                            span.review__user-position основатель Loftschool
+                    li.review__item
+                        svg.review__quotes
+                            use(xlink:href=require('../../../img/svg/quotes.svg') + '#' + 'quotes')
+                        div.review__text
+                            p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                        .review__user
+                            .review__user-pic
+                                img.review__user-img(src=require('../../../img/public/review-user2.jpg')  alt='review user avatar')
+                            span.review__user-name Сабанцев Владимир
+                            span.review__user-position преподаватель
+                .feedback.review__feedback
+                    span.feedback__title Связаться со мной
+                    form#feedback__form.feedback__form
+                        input.feedback__input-text(type='text' placeholder='Name')
+                        input.feedback__input-text(type='text' placeholder='Email')
+                        textarea.feedback__textarea(placeholder='Ваше сообщение')
+                    ul.feedback__buttons-list
+                        li.feedback__buttons-item
+                            button.feedback__button(form='feedback__form' type='submit') Отправить
+                        li.feedback__buttons-item
+                            button.feedback__button(form='feedback__form' type='reset') Очистить
+                a.arrow-up.arrow-up__link.review__arrow(href='#')
+                    svg.arrow-up__icon
+                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'arrow_down')
+            footer.footer
+                .container.footer__container
+                    .footer__row
+                        ul.footer__menu.menu.menu__list
+                            li.menu__item.menu__item_type_fixed-margin
+                                a(href='/works.html').menu__link.menu__link_color_white Мои работы
+                            li().menu__item.menu__item_type_fixed-margin
+                                a(href='/about.html').menu__link.menu__link_color_white Обо мне
+                            li.menu__item.menu__item_type_fixed-margin
+                                a(href='/blog.html').menu__link.menu__link_color_white Блог
+                            li.menu__item.menu__item_type_fixed-margin
+                                a(href='/welcome-auth.html').menu__link.menu__link_color_white Авторизация
+                        ul.footer__socials.socials.socials__block
+                            li.socials__item.socials__item_type_round
+                                a(href='#').socials__link
+                                    svg.socials__icon.socials__icon_type_round
+                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'vk_round')
+                            li.socials__item.socials__item_type_round
+                                a(href='#').socials__link
+                                    svg.socials__icon.socials__icon_type_round
+                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'github_round')
+                            li.socials__item.socials__item_type_round
+                                a(href='#').socials__link
+                                    svg.socials__icon.socials__icon_type_round
+                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in_round')
+                    .footer__row
+                        .footer__desc
+                            p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                        .copyright.footer__copyright
+                            p © Владимир Астахов | создано с любовью в LoftSchool | 2016

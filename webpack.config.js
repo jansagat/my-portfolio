@@ -24,7 +24,8 @@ module.exports = {
         index: proj_path.pages.pages + '/index.js',
         welcome: proj_path.pages.welcome + '/welcome.js',
         blog: proj_path.pages.blog + '/blog.js',
-        about: proj_path.pages.about + '/about.js'
+        about: proj_path.pages.about + '/about.js',
+        works: proj_path.pages.works + '/works.js'
     },
     // Output dirrectory
     output: {
@@ -75,6 +76,11 @@ module.exports = {
             filename: 'about.html',
             chunks: ['about', 'common'],
             template: proj_path.pages.about + '/about.pug'
+        }),
+        new htmlWebpackPlugin({
+            filename: 'works.html',
+            chunks: ['works', 'common'],
+            template: proj_path.pages.works + '/works.pug'
         }),
         new ExtractTextPlugin('./css/style.css'),
         // new webpack.ProvidePlugin({

@@ -1,0 +1,12 @@
+.arrow-up__link {
+  display: block;
+  text-decoration: none;
+}
+
+.arrow-up__icon {
+  width: 30px;
+  height: 18px;
+  fill: $white;
+  fill-opacity: .7;
+  transform: rotateX(180deg);
+}

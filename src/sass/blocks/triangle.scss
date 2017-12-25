@@ -15,6 +15,10 @@
   &_color_beige {
     border-color: transparent transparent transparent #efeee9;
   }
+
+  &_works_page {
+    border-color: transparent transparent transparent #faf8f0;
+  }
 }
 
 .triangle__right {
@@ -29,5 +33,9 @@
 
   &_color_beige {
     border-color: transparent transparent #eeebdf transparent;
+  }
+
+  &_works_page {
+    border-color: transparent transparent #faf8f0 transparent;
   }
 }

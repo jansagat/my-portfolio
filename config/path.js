@@ -8,6 +8,7 @@ module.exports = {
         pages: path.join(__dirname, '../src/template/pages/'),
         welcome: path.join(__dirname, '../src/template/pages/welcome/'),
         blog: path.join(__dirname, '../src/template/pages/blog/'),
-        about: path.join(__dirname, '../src/template/pages/about/')
+        about: path.join(__dirname, '../src/template/pages/about/'),
+        works: path.join(__dirname, '../src/template/pages/works/')
     }
 }
