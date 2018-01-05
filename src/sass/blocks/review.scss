@@ -130,6 +130,8 @@
   align-items: center;
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 
 .review__arrow {
