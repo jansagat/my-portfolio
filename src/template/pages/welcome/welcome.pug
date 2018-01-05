@@ -1,0 +1,71 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Welcome to my portfolio
+    body
+        .wrapper
+            section.section.welcome
+                .welcome__button.button
+                    a(href='').button__link.button__link_color_transparent Авторизоваться
+                .welcome__block
+                    .welcome__user.user-profile.user-profile__content
+                        .user-profile__pic.user-profile__pic_margin_top
+                            img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
+                        span.user-profile__name.user-profile__name_type_welcome Владимир Астахов
+                        span.user-profile__desc.user-profile__desc_type_welcome Личный сайт веб разработчика
+                        ul.user-profile__socials.socials.socials__block
+                            li.socials__item
+                                a(href='#').socials__link
+                                    svg.socials__icon.socials__icon_color_green
+                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'vk')
+                            li.socials__item
+                                a(href='#').socials__link
+                                    svg.socials__icon.socials__icon_color_green
+                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'github')
+                            li.socials__item
+                                a(href='#').socials__link
+                                    svg.socials__icon.socials__icon_color_green
+                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in')
+                    ul.welcome__menu.menu.menu__list
+                        li.menu__item.menu__item_color_green
+                            a(href='').menu__link.menu__link_color_green Мои работы
+                        li().menu__item.menu__item_color_green
+                            a(href='').menu__link.menu__link_color_green Обо мне
+                        li.menu__item.menu__item_color_green
+                            a(href='').menu__link.menu__link_color_green Блог
+                    //.welcome__signin.signin.signin__content
+                    //    h2.title__subtitle Авторизуйтесь
+                    //    form.form.signin__form(action='' method='post' id='signin-form')
+                    //        label.form__label.form__label_type_text
+                    //            span.form__input-icon
+                    //                svg.form__input-svg
+                    //                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'login')
+                    //            input.form__text(type='text' name='login' placeholder='Логин')
+                    //        label.form__label.form__label_type_text
+                    //            span.form__input-icon
+                    //                svg.form__input-svg
+                    //                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'password')
+                    //            input.form__text(type='password' name='login' placeholder='Пароль')
+                    //        label.form__label(for='human-checkbox')
+                    //            input#human-checkbox.form__checkbox(type='checkbox' name='human')
+                    //            span.form__checkbox-icon
+                    //                svg.form__checkbox-svg
+                    //                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'check')
+                    //            span Я человек
+                    //        .form__col
+                    //            span Вы точно не робот?
+                    //            .form__row
+                    //                label.form__label.form__label_type_radio(for='yes-radio')
+                    //                    input#yes-radio.form__radio(type='radio' name='not-robot')
+                    //                    span.form__input-radio Да
+                    //                label.form__label(for='no-radio')
+                    //                    input#no-radio.form__radio(type='radio' name='not-robot')
+                    //                    span.form__input-radio Не уверен
+                    //ul.welcome__menu.menu.menu__list
+                    //    li.menu__item.menu__item_color_green
+                    //        a(href='#').menu__link.menu__link_color_green На главную
+                    //    li().menu__item.menu__item_color_green
+                    //        button(type='submit' form='signin-form').menu__link.menu__link_color_green Войти
+                .copyright.welcome__copyright
+                    span &copy; Владимир Астахов | создано с любовью в LoftSchool | 2017

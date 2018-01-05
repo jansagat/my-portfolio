@@ -1,0 +1,41 @@
+.triangle {
+  position: relative;
+}
+
+.triangle__left {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7vw 0 0 50vw;
+  border-color: transparent transparent transparent white;
+  position: absolute;
+  top: -7vw;
+  left: 0;
+
+  &_color_beige {
+    border-color: transparent transparent transparent #efeee9;
+  }
+
+  &_works_page {
+    border-color: transparent transparent transparent #faf8f0;
+  }
+}
+
+.triangle__right {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 7vw 50vw;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  top: -7vw;
+  right: 0;
+
+  &_color_beige {
+    border-color: transparent transparent #eeebdf transparent;
+  }
+
+  &_works_page {
+    border-color: transparent transparent #faf8f0 transparent;
+  }
+}

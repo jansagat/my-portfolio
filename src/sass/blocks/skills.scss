@@ -1,0 +1,62 @@
+.skills__title {
+  @include roboto(medium);
+  font-size: 28px;
+  color: $darkBlue;
+}
+
+.skills__item {
+  margin-top: 25px;
+}
+
+.skills__circle-list {
+  display: flex;
+  margin-top: 15px;
+}
+
+.skills__circle-item {
+  position: relative;
+  margin-right: 37px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.skills__svg {
+  width: 110px;
+  height: 110px;
+  fill: transparent;
+  stroke: $green;
+  stroke-opacity: .9;
+  stroke-width: 20;
+  stroke-dasharray: 283;
+  stroke-dashoffset: -80;
+  transition: stroke-dashoffset 1s;
+}
+
+.skills__name {
+  @include roboto(medium);
+  font-size: 13px;
+  color: rgba($green, 0.9);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 68px;
+  height: 110px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__gray-cirlce {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 20px solid #dfdcd5;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  z-index: -10;
+}

@@ -1,0 +1,31 @@
+.welcome {
+  background-image: url(../img/bg/welcome-bg.jpg);
+  @include cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome__block {
+  width: 100%;
+  max-width: 379px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: rgba(#fff, .85);
+}
+
+.welcome__menu {
+  display: flex;
+  height: 45px;
+  overflow: hidden;
+}
+
+.welcome__button {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.welcome__copyright {
+  position: absolute;
+  bottom: 30px;
+}

@@ -1,0 +1,153 @@
+.slider__arrows {
+  display: flex;
+  width: 50%;
+  max-height: 187px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slider__title {
+  @include bernier();
+  color: $darkBlue;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  margin-top: 14px;
+  margin-bottom: 35px;
+  line-height: 39px;
+  text-align: center;
+
+  &:before {
+    content: '';
+    width: 22px;
+    height: 5px;
+    background: rgba(55, 62, 66, 0.2);
+    margin-right: 18px;
+  }
+
+  &:after {
+    content: '';
+    width: 22px;
+    height: 5px;
+    background: rgba(55, 62, 66, 0.2);
+    margin-left: 18px;
+  }
+
+  & span {
+    max-width: 280px;
+  }
+}
+
+.slider__stack {
+  @include roboto(medium);
+  font-size: 16px;
+  color: $green;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+
+  &:before {
+    content: '';
+    display: block;
+    max-width: 80%;
+    height: 1px;
+    background: rgba(#109c8e, .3);
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    max-width: 80%;
+    height: 1px;
+    background: rgba(#109c8e, .3);
+    margin: 0 auto;
+    margin-top: 18px;
+  }
+}
+
+.slider__link {
+  @include roboto(medium);
+  font-size: 16px;
+  color: $white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: $green;
+  border-radius: 4px;
+}
+
+.slider__link-svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.slider__svg-arrow-down,
+.slider__svg-arrow-up {
+  width: 45px;
+  height: 30px;
+  fill: #fff;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider__down-arrow,
+.slider__up-arrow {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    background: rgba(#888372, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.slider__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-height: 745px;
+  height: 100%;
+}
+
+.slider__desc {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__pic {
+  width: 50%;
+  height: 77%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__img {
+  max-width: 80%;
+}
+
+.slider__arrow-background {
+  max-width: 100%;
+}

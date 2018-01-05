@@ -1,0 +1,52 @@
+.title {
+  @include bernier();
+  font-size: 63px;
+  color: $white;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+
+  &:before {
+    content: '';
+    width: 22px;
+    height: 5px;
+    background: rgba($white, 0.2);
+    margin: 0 18px;
+  }
+
+  &:after {
+    content: '';
+    width: 22px;
+    height: 5px;
+    background: rgba($white, 0.2);
+    margin: 0 18px;
+  }
+}
+
+.title__subtitle {
+  @include bernier();
+  color: $darkBlue;
+  font-size: 35px;
+  line-height: 1.17;
+  margin: 32px 34px;
+  display: flex;
+  align-items: center;
+
+  &_type_row {
+    &:before {
+      content: '';
+      width: 22px;
+      height: 5px;
+      background: rgba(55, 62, 66, 0.2);
+      margin: 0 18px;
+    }
+
+    &:after {
+      content: '';
+      width: 22px;
+      height: 5px;
+      background: rgba(55, 62, 66, 0.2);
+      margin: 0 18px;
+    }
+  }
+}

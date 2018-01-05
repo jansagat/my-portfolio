@@ -1,0 +1,53 @@
+//colors
+$green: #00bfa5;
+$darkGreen: #009688;
+$darkBlue: #455a64;
+$black: #373e42;
+$white: #ffffff;
+
+// resolutions
+$large: 1800px;
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+//normalize
+@import "_misc/normalize";
+
+// media
+@import "_misc/media";
+
+// setups
+@import "_misc/fonts";
+@import "_misc/layout";
+@import "_misc/mixins";
+@import "_misc/animations";
+
+// blocks
+@import "blocks/welcome";
+@import "blocks/button";
+@import "blocks/menu";
+@import "blocks/section";
+@import "blocks/socials";
+@import "blocks/user-profile";
+@import "blocks/copyright";
+@import "blocks/signin";
+@import "blocks/form";
+@import "blocks/header";
+@import "blocks/hamburger";
+@import "blocks/title";
+@import "blocks/grid";
+@import "blocks/sidebar";
+@import "blocks/article";
+@import "blocks/footer";
+@import "blocks/triangle";
+@import "blocks/about";
+@import "blocks/skills";
+@import "blocks/contacts";
+@import "blocks/map";
+@import "blocks/works";
+@import "blocks/review";
+@import "blocks/slider";
+@import "blocks/feedback";
+@import "blocks/arrow";
