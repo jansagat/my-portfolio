@@ -3,5 +3,12 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "globals": {
+        "document": false
     }
 }
