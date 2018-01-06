@@ -10,5 +10,6 @@ module.exports = {
         blog: path.join(__dirname, '../src/template/pages/blog/'),
         about: path.join(__dirname, '../src/template/pages/about/'),
         works: path.join(__dirname, '../src/template/pages/works/')
-    }
+    },
+    common: path.join(__dirname, '../src/template/common/')
 }

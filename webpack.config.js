@@ -25,7 +25,8 @@ module.exports = {
         welcome: proj_path.pages.welcome + '/welcome.js',
         blog: proj_path.pages.blog + '/blog.js',
         about: proj_path.pages.about + '/about.js',
-        works: proj_path.pages.works + '/works.js'
+        works: proj_path.pages.works + '/works.js',
+        common: proj_path.common + '/common.js'
     },
     // Output dirrectory
     output: {

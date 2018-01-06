@@ -1,9 +1,47 @@
 .hamburger__button {
+
+  &_active {
+    z-index: 1000;
+  }
+
+  &_active .hamburger__line {
+    &:before {
+      content: '';
+      height: 5px;
+      border-radius: 2px;
+      background: #ffffff;
+      display: block;
+      position: absolute;
+      top: -15px;
+      transform-origin: left;
+      animation: hamburger-menu-line-1 .5s forwards .5s;
+    }
+
+    &:after {
+      content: '';
+      width: 42px;
+      height: 5px;
+      border-radius: 2px;
+      background: #ffffff;
+      display: block;
+      position: absolute;
+      top: 15px;
+      transform-origin: left;
+      animation: hamburger-menu-line-3 .5s forwards .5s;
+    }
+
+    transform-origin: center;
+    animation: hambruger-menu-rotate .5s forwards, hamburger-menu-line-2 .2s forwards .5s;
+  }
+}
+
+.hamburger__line {
   width: 40px;
   height: 5px;
   border-radius: 2px;
   background: $white;
   display: block;
+  z-index: 200;
 
   &:before {
     content: '';
@@ -13,7 +51,7 @@
     background: $white;
     display: block;
     position: absolute;
-    top: 15px;
+    top: -15px;
   }
 
   &:after {
@@ -24,6 +62,10 @@
     background: $white;
     display: block;
     position: absolute;
-    top: 30px;
+    top: 15px;
+  }
+
+  &_active {
+
   }
 }
