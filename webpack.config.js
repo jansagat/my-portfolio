@@ -53,21 +53,21 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         }),
+        // new htmlWebpackPlugin({
+        //     filename: 'index.html',
+        //     chunks: ['index', 'common'],
+        //     template: proj_path.pages.pages + '/index.pug'
+        // }),
         new htmlWebpackPlugin({
             filename: 'index.html',
-            chunks: ['index', 'common'],
-            template: proj_path.pages.pages + '/index.pug'
-        }),
-        new htmlWebpackPlugin({
-            filename: 'welcome.html',
             chunks: ['welcome', 'common'],
             template: proj_path.pages.welcome + '/welcome.pug'
         }),
-        new htmlWebpackPlugin({
-            filename: 'welcome-auth.html',
-            chunks: ['welcome', 'common'],
-            template: proj_path.pages.welcome + '/welcome-auth.pug'
-        }),
+        // new htmlWebpackPlugin({
+        //     filename: 'welcome-auth.html',
+        //     chunks: ['welcome', 'common'],
+        //     template: proj_path.pages.welcome + '/welcome-auth.pug'
+        // }),
         new htmlWebpackPlugin({
             filename: 'blog.html',
             chunks: ['blog', 'common'],
