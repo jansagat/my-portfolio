@@ -25,7 +25,8 @@ module.exports = {
         welcome: proj_path.pages.welcome + '/welcome.js',
         blog: proj_path.pages.blog + '/blog.js',
         about: proj_path.pages.about + '/about.js',
-        works: proj_path.pages.works + '/works.js'
+        works: proj_path.pages.works + '/works.js',
+        common: proj_path.common + '/common.js'
     },
     // Output dirrectory
     output: {
@@ -52,21 +53,21 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         }),
+        // new htmlWebpackPlugin({
+        //     filename: 'index.html',
+        //     chunks: ['index', 'common'],
+        //     template: proj_path.pages.pages + '/index.pug'
+        // }),
         new htmlWebpackPlugin({
             filename: 'index.html',
-            chunks: ['index', 'common'],
-            template: proj_path.pages.pages + '/index.pug'
-        }),
-        new htmlWebpackPlugin({
-            filename: 'welcome.html',
             chunks: ['welcome', 'common'],
             template: proj_path.pages.welcome + '/welcome.pug'
         }),
-        new htmlWebpackPlugin({
-            filename: 'welcome-auth.html',
-            chunks: ['welcome', 'common'],
-            template: proj_path.pages.welcome + '/welcome-auth.pug'
-        }),
+        // new htmlWebpackPlugin({
+        //     filename: 'welcome-auth.html',
+        //     chunks: ['welcome', 'common'],
+        //     template: proj_path.pages.welcome + '/welcome-auth.pug'
+        // }),
         new htmlWebpackPlugin({
             filename: 'blog.html',
             chunks: ['blog', 'common'],
@@ -127,7 +128,10 @@ module.exports = {
                 enforce: "pre",
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: "eslint-loader"
+                loader: "eslint-loader",
+                options: {
+                    fix: true
+                }
             },
             {
                 test: /\.(jpg|png|svg)$/,

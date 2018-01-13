@@ -3,14 +3,18 @@
   @include cover;
   justify-content: center;
   align-items: center;
+  position: relative;
+  perspective: 800px;
 }
 
 .welcome__block {
   width: 100%;
   max-width: 379px;
   border-radius: 4px;
-  overflow: hidden;
-  background: rgba(#fff, .85);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform-origin: right center;
 }
 
 .welcome__menu {

@@ -6,6 +6,27 @@ html
     body
         .wrapper
             header.header.header__overlay
+                #parallax.parallax
+                    .parallax__layer
+                        img.parallax__image(src=require('../../../img/bg/parallax/9.jpg'))
+                    .parallax__layer
+                        img.parallax__image(src=require('../../../img/bg/parallax/8.png'))
+                    .parallax__layer
+                        img.parallax__image(src=require('../../../img/bg/parallax/7.png'))
+                    .parallax__layer
+                        img.parallax__image(src=require('../../../img/bg/parallax/6.png'))
+                    .parallax__layer
+                        img.parallax__image(src=require('../../../img/bg/parallax/5.png'))
+                    .parallax__layer
+                        img.parallax__image(src=require('../../../img/bg/parallax/4.png'))
+                    .parallax__layer
+                        img.parallax__image(src=require('../../../img/bg/parallax/3.png'))
+                    .parallax__layer
+                        img.parallax__image(src=require('../../../img/bg/parallax/2.png'))
+                    .parallax__layer
+                        img.parallax__image(src=require('../../../img/bg/parallax/1.png'))
+                    .parallax__layer
+                        img.parallax__image(src=require('../../../img/bg/parallax/0.png'))
                 .container.header__container
                     svg.header__svg-icon
                         use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'portfolio_header')
@@ -22,8 +43,8 @@ html
                             a(href='#').socials__link
                                 svg.socials__icon.socials__icon_color_white
                                     use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in')
-                    a.header__hamburger-button(href='#')
-                        span.hamburger.hamburger__button
+                    a.header__hamburger-button.hamburger.hamburger__button(href='#')
+                        span.hamburger__line
                     .header__user.header__user_move_top.user-profile
                         .user-profile__pic
                             img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
@@ -90,6 +111,7 @@ html
                             span.review__user-name Сабанцев Владимир
                             span.review__user-position преподаватель
                 .feedback.review__feedback
+                    .feedback__blur
                     span.feedback__title Связаться со мной
                     form#feedback__form.feedback__form
                         input.feedback__input-text(type='text' placeholder='Name')
@@ -133,3 +155,12 @@ html
                             p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
                         .copyright.footer__copyright
                             p © Владимир Астахов | создано с любовью в LoftSchool | 2016
+            ul.hambuger-menu.hamburger-menu__list
+                li.hamburger-menu__item
+                    a.hambuger-menu__link(href='#') Мои работы
+                li.hamburger-menu__item
+                    a.hambuger-menu__link(href='#') Блог
+                li.hamburger-menu__item
+                    a.hambuger-menu__link(href='#') Обо мне
+                li.hamburger-menu__item
+                    a.hambuger-menu__link(href='#') Авторизация
