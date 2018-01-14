@@ -23,7 +23,10 @@ function moveParallaxLayers(layer, windowScroll, speeds) {
 
 function scrollParallax() {
     let parallaxContainer = document.querySelector('#parallax');
-    if(parallaxContainer) {
+    let htmlWidth = document.querySelector('html').offsetWidth;
+
+    if(parallaxContainer && (htmlWidth > 768)) {
+        parallaxContainer.classList.toggle('parallax_turn_on');
         let layers = parallaxContainer.children;
 
         window.addEventListener('scroll', function () {
@@ -38,7 +41,10 @@ function scrollParallax() {
 
 function mouseParallax() {
     let parallaxContainer = document.querySelector('#parallax_mouse');
-    if(parallaxContainer) {
+    let htmlWidth = document.querySelector('html').offsetWidth;
+
+    if(parallaxContainer && (htmlWidth > 768)) {
+        parallaxContainer.classList.toggle('parallax_turn_on');
         let layers = parallaxContainer.children;
 
         window.addEventListener('mousemove', function (e) {

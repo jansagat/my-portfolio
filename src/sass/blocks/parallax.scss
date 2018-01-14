@@ -3,6 +3,7 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
+  display: none;
 
   &:after {
     content: '';
@@ -12,6 +13,10 @@
     left: 0;
     right: 0;
     bottom: 0;
+  }
+
+  &_turn_on {
+    display: block;
   }
 }
 
