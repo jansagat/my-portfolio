@@ -2,6 +2,7 @@ doctype html
 html
     head
         meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
         title Welcome to my portfolio
     body
         .wrapper
@@ -43,8 +44,8 @@ html
                             a(href='#').socials__link
                                 svg.socials__icon.socials__icon_color_white
                                     use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in')
-                    a.header__hamburger-button(href='#')
-                        span.hamburger.hamburger__button
+                    a.header__hamburger-button.hamburger.hamburger__button(href='#')
+                        span.hamburger__line
                     .header__user.header__user_move_top.user-profile
                         .user-profile__pic
                             img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
@@ -55,8 +56,8 @@ html
                             use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'arrow_down')
             .about
                 .triangle
-                    .triangle__left.triangle__left_color_beige
-                    .triangle__right.triangle__right_color_beige
+                    .triangle__left.triangle__left_about_page
+                    .triangle__right.triangle__right_about_page
                 .container.about__container
                     .about__left
                         .about__title-group
@@ -184,3 +185,12 @@ html
                             p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
                         .copyright.footer__copyright
                             p © Владимир Астахов | создано с любовью в LoftSchool | 2016
+            ul.hambuger-menu.hamburger-menu__list
+                li.hamburger-menu__item
+                    a.hambuger-menu__link(href='./works.html') Мои работы
+                li.hamburger-menu__item
+                    a.hambuger-menu__link(href='./blog.html') Блог
+                li.hamburger-menu__item
+                    a.hambuger-menu__link(href='./about.html') Обо мне
+                li.hamburger-menu__item
+                    a.hambuger-menu__link(href='./index.html') Авторизация

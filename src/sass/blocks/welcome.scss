@@ -27,9 +27,15 @@
   position: absolute;
   top: 25px;
   right: 20px;
+
+  @include phones() {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 
 .welcome__copyright {
   position: absolute;
   bottom: 30px;
+  text-align: center;
 }

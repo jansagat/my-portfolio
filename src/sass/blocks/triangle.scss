@@ -12,7 +12,7 @@
   top: -7vw;
   left: 0;
 
-  &_color_beige {
+  &_about_page {
     border-color: transparent transparent transparent #efeee9;
   }
 
@@ -31,8 +31,12 @@
   top: -7vw;
   right: 0;
 
-  &_color_beige {
+  &_about_page {
     border-color: transparent transparent #eeebdf transparent;
+
+    @include tablets() {
+      border-color: transparent transparent #efeee9 transparent;
+    }
   }
 
   &_works_page {

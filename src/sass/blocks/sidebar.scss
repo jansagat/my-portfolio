@@ -1,5 +1,11 @@
 .sidebar {
   margin-right: 80px;
+  flex: 1 1 30%;
+  max-width: 30%;
+
+  @include tablets() {
+    display: none;
+  }
 }
 
 .sidebar__list {

@@ -6,20 +6,29 @@
 
 .skills__item {
   margin-top: 25px;
+
+  @include tablets() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .skills__circle-list {
   display: flex;
   margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include tablets() {
+    justify-content: center;
+  }
 }
 
 .skills__circle-item {
   position: relative;
-  margin-right: 37px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  margin: 10px;
 }
 
 .skills__svg {

@@ -1,5 +1,5 @@
 @mixin large {
-  @media screen and (max-width: $large) {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }

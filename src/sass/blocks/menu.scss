@@ -5,6 +5,13 @@
     &_fixed-margin {
       flex: initial;
       margin: 25px;
+
+      @include tablets() {
+        margin: 16px 10px;
+      }
+      @include phones() {
+        margin: 16px 5px;
+      }
     }
   }
   &_color {
