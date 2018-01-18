@@ -2,15 +2,20 @@ import '../../../sass/main.scss';
 
 function blur() {
     let imgWidth = document.querySelector('.section.review').offsetWidth;
-    let imgHeight = document.querySelector('.section.review').offsetHeight;
-    let top = document.querySelector('.feedback.review__feedback').offsetTop;
+    let backgroundTop = document.querySelector('.review__background').offsetTop;
+    let lengthToParentTop = document.querySelector('.feedback.review__feedback').offsetTop;
     let left = document.querySelector('.feedback.review__feedback').offsetLeft;
     let blur = document.querySelector('.feedback__blur');
+    let formBackgroundPositionTop = lengthToParentTop - backgroundTop;
 
-    blur.style.backgroundSize = imgWidth + 'px' + ' ' + imgHeight + 'px';
-    blur.style.backgroundPosition = -left + 'px' + ' ' + -top + 'px';
+    if (imgWidth <= 900) {
+        blur.style.backgroundSize = 900 + 'px' + ' ' + 'auto';
+    } else {
+        blur.style.backgroundSize = imgWidth + 'px' + ' ' + 'auto';
+    }
+    blur.style.backgroundPosition = -left + 'px' + ' ' + -formBackgroundPositionTop + 'px';
 }
 
-blur();
+window.addEventListener('load', blur);
 
 window.addEventListener('resize', blur);
