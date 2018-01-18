@@ -2,8 +2,7 @@
   align-items: center;
   height: auto;
   position: relative;
-  background: url('../img/bg/review-bg.jpg');
-  @include cover();
+  overflow: hidden;
 }
 
 .review__header {
@@ -136,4 +135,19 @@
 
 .review__arrow {
   margin:15px 0 65px;
+}
+
+.review__background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 900px;
+}
+
+.review__img {
+  z-index: -1000;
+  position: relative;
+  width: 100%;
+  display: block;
 }
