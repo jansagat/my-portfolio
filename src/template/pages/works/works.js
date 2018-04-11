@@ -1,4 +1,5 @@
 import '../../../sass/main.scss';
+import slider from '../../../js/slider';
 
 function blur() {
     let imgWidth = document.querySelector('.section.review').offsetWidth;
@@ -19,3 +20,5 @@ function blur() {
 window.addEventListener('load', blur);
 
 window.addEventListener('resize', blur);
+
+slider.init();

@@ -46,7 +46,10 @@ module.exports = {
     },
     // Removes the extension
     resolve: {
-        extensions: ['.js', '.pug', '.scss', '.less', '.jsx', '.vue']
+        extensions: ['.js', '.pug', '.scss', '.less', '.jsx', '.vue'],
+        alias: {
+            sliderImg: path.resolve(__dirname, './src/img/public/slider/')
+        }
     },
     // Using plugins for webpack
     plugins: [
@@ -114,15 +117,15 @@ module.exports = {
                     presets: ['env', 'es2015', 'stage-1']
                 }
             },
-            {
-                enforce: "pre",
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: "eslint-loader",
-                options: {
-                    fix: true
-                }
-            },
+            // {
+            //     enforce: "pre",
+            //     test: /\.js$/,
+            //     exclude: /node_modules/,
+            //     loader: "eslint-loader",
+            //     options: {
+            //         fix: true
+            //     }
+            // },
             {
                 test: /\.(jpg|png|svg)$/,
                 loader: 'file-loader',

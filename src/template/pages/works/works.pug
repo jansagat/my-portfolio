@@ -67,23 +67,23 @@ html
                         li.slider__list
                             .slider__desc
                                 .slider__title
-                                    span Сайт школы онлайн образования
-                                .slider__stack HTML, css, javascript
-                                a.slider__link(href="#")
+                                    span#sliderTitle Сайт школы онлайн образования
+                                .slider__stack#sliderStack HTML, css, javascript
+                                a.slider__link#sliderLink(href="#")
                                     svg.slider__link-svg
                                         use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'link')
                                     span Посмотреть сайт
                             .slider__pic
-                                img.slider__img(src=require('../../../img/public/slider/1.png') alt='my works')
+                                img.slider__img#sliderImg(src=require('sliderImg/1.png') alt='my works')
                             .slider__arrows
-                                .slider__down-arrow
+                                .slider__down-arrow#downArrow
                                     svg.slider__svg-arrow-down
                                         use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'portf_arrow_down')
-                                    img.slider__arrow-background(src=require('../../../img/public/slider/2.jpg') alt='down')
-                                .slider__up-arrow
+                                    img.slider__arrow-background#sliderPrevImg(src=require('../../../img/public/slider/2.jpg') alt='down')
+                                .slider__up-arrow#upArrow
                                     svg.slider__svg-arrow-up
                                         use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'portf_arrow_up')
-                                    img.slider__arrow-background(src=require('../../../img/public/slider/3.jpg') alt='up')
+                                    img.slider__arrow-background#sliderNextImg(src=require('../../../img/public/slider/3.jpg') alt='up')
             section.section.review
                 .review__background
                     img.review__img(src=require('../../../img/bg/review-bg.jpg'))
@@ -95,7 +95,7 @@ html
                 ul.review__list
                     li.review__item
                         svg.review__quotes
-                           use(xlink:href=require('../../../img/svg/quotes.svg') + '#' + 'quotes')
+                            use(xlink:href=require('../../../img/svg/quotes.svg') + '#' + 'quotes')
                         div.review__text
                             p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                         .review__user
