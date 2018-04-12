@@ -77,10 +77,10 @@ module.exports = {
             template: proj_path.pages.works + '/works.pug'
         }),
         new ExtractTextPlugin('./css/style.css'),
-        // new webpack.ProvidePlugin({
-        //     $      : 'jquery',
-        //     jQuery : 'jquery'
-        // }),
+        new webpack.ProvidePlugin({
+            $      : 'jquery',
+            jQuery : 'jquery'
+        }),
         new UglifyJSPlugin(),
     ],
     // Using modules and loaders
