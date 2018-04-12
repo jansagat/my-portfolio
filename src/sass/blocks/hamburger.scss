@@ -1,71 +1,49 @@
 .hamburger__button {
-
-  &_active {
-    z-index: 1000;
-  }
-
-  &_active .hamburger__line {
-    &:before {
-      content: '';
-      height: 5px;
-      border-radius: 2px;
-      background: #ffffff;
-      display: block;
-      position: absolute;
-      top: -15px;
-      transform-origin: left;
-      animation: hamburger-menu-line-1 .5s forwards .5s;
-    }
-
-    &:after {
-      content: '';
-      width: 42px;
-      height: 5px;
-      border-radius: 2px;
-      background: #ffffff;
-      display: block;
-      position: absolute;
-      top: 15px;
-      transform-origin: left;
-      animation: hamburger-menu-line-3 .5s forwards .5s;
-    }
-
-    transform-origin: center;
-    animation: hambruger-menu-rotate .5s forwards, hamburger-menu-line-2 .2s forwards .5s;
-  }
+  width: 40px;
+  height: 30px;
+  margin: 0px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 1000;
 }
 
-.hamburger__line {
-  width: 40px;
-  height: 5px;
-  border-radius: 2px;
-  background: $white;
+.hamburger__button span {
   display: block;
-  z-index: 200;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+  background: #fff;
+}
 
-  &:before {
-    content: '';
-    width: 40px;
-    height: 5px;
-    border-radius: 2px;
-    background: $white;
-    display: block;
-    position: absolute;
-    top: -15px;
-  }
+.hamburger__button span:nth-child(1) {
+  top: 0px;
+}
 
-  &:after {
-    content: '';
-    width: 40px;
-    height: 5px;
-    border-radius: 2px;
-    background: $white;
-    display: block;
-    position: absolute;
-    top: 15px;
-  }
+.hamburger__button span:nth-child(2) {
+  top: 12px;
+}
 
-  &_active {
+.hamburger__button span:nth-child(3) {
+  top: 24px;
+}
 
-  }
+.hamburger__button.open span:nth-child(1) {
+  top: 11px;
+  transform: rotate(135deg);
+}
+
+.hamburger__button.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.hamburger__button.open span:nth-child(3) {
+  top: 11px;
+  transform: rotate(-135deg);
 }

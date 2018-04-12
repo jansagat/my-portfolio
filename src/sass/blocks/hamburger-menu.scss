@@ -16,23 +16,31 @@
     height: 100%;
     opacity: 1;
     transition: opacity 1s;
+
+    & .hamburger-menu__item {
+      display: block;
+    }
+    & .hamburger-menu__link {
+      display: flex;
+    }
   }
 }
 
 .hamburger-menu__item {
   margin-bottom: 40px;
+  display: none;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.hambuger-menu__link {
+.hamburger-menu__link {
   @include bernier();
   font-size: 63px;
   color: $white;
   text-decoration: none;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 100%;
