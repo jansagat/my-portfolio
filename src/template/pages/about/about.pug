@@ -51,14 +51,14 @@ html
                             img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
                         span.user-profile__name Владимир Астахов
                         span.user-profile__desc Личный сайт веб разработчика
-                    a.header__arrow-down-link(href='#')
+                    a.header__arrow-down-link(href='#about')
                         svg.header__arrow-down-icon
                             use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'arrow_down')
             .about
                 .triangle
                     .triangle__left.triangle__left_about_page
                     .triangle__right.triangle__right_about_page
-                .container.about__container
+                .container.about__container#about
                     .about__left
                         .about__title-group
                             svg.about__svg

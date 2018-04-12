@@ -6,7 +6,7 @@ html
         title Welcome to my portfolio
     body
         .wrapper
-            header.header.header__overlay
+            header.header.header__overlay#header
                 #parallax.parallax
                     .parallax__layer
                         img.parallax__image(src=require('../../../img/bg/parallax/9.jpg'))
@@ -51,14 +51,14 @@ html
                             img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
                         span.user-profile__name Владимир Астахов
                         span.user-profile__desc Личный сайт веб разработчика
-                    a.header__arrow-down-link(href='#')
+                    a.header__arrow-down-link(href='#works')
                         svg.header__arrow-down-icon
                             use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'arrow_down')
             section.section.works
                 .triangle
                     .triangle__left.triangle__left_works_page
                     .triangle__right.triangle__right_works_page
-                .works__header
+                .works__header#works
                     svg.works__svg
                         use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'works_header')
                     span.works__title Мои работы
@@ -125,7 +125,7 @@ html
                             button.feedback__button(form='feedback__form' type='submit') Отправить
                         li.feedback__buttons-item
                             button.feedback__button(form='feedback__form' type='reset') Очистить
-                a.arrow-up.arrow-up__link.review__arrow(href='#')
+                a.arrow-up.arrow-up__link.review__arrow(href='#header')
                     svg.arrow-up__icon
                         use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'arrow_down')
             footer.footer
