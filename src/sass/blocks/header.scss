@@ -1,32 +1,32 @@
 .header {
-  background: url(../img/bg/header-bg.jpg);
-  @include cover();
+  //background: url(../img/bg/header-bg.jpg);
+  //@include cover();
   min-height: 650px;
   height: 100%;
   position: relative;
 
   &_type_blog {
-    background: url(../img/bg/blog-bg.jpg);
-    @include cover();
+    //background: url(../img/bg/blog-bg.jpg);
+    //@include cover();
     max-height: 401px;
   }
 }
 
-.header__overlay {
-  &:before {
-    content: '';
-    background-color: rgba(1, 102, 114, .3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    @include tablets() {
-      background-color: rgba(59, 102, 114, .3);
-    }
-  }
-}
+//.header__overlay {
+//  &:before {
+//    content: '';
+//    background-color: rgba(1, 102, 114, .3);
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    right: 0;
+//    bottom: 0;
+//
+//    @include tablets() {
+//      background-color: rgba(59, 102, 114, .3);
+//    }
+//  }
+//}
 
 .header__container {
   flex-direction: column;
