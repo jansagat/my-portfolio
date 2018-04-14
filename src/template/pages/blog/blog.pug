@@ -1,142 +1,81 @@
-doctype html
-html
-    head
-        meta(charset='utf-8')
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        title Welcome to my portfolio
-    body
-        .wrapper
-            header.header.header_type_blog
-                #parallax.parallax
-                    .parallax__layer.rellax(data-rellax-speed="-5")
-                        img.parallax__image(src=require('../../../img/bg/parallax/9.png'))
-                    .parallax__layer.rellax(data-rellax-speed="-4")
-                        img.parallax__image(src=require('../../../img/bg/parallax/8.png'))
-                    .parallax__layer.rellax(data-rellax-speed="-3")
-                        img.parallax__image(src=require('../../../img/bg/parallax/7.png'))
-                    .parallax__layer.rellax(data-rellax-speed="-2")
-                        img.parallax__image(src=require('../../../img/bg/parallax/6.png'))
-                    .parallax__layer.rellax(data-rellax-speed="-1")
-                        img.parallax__image(src=require('../../../img/bg/parallax/5.png'))
-                    .parallax__layer.rellax(data-rellax-speed="0")
-                        img.parallax__image(src=require('../../../img/bg/parallax/4.png'))
-                    .parallax__layer.rellax(data-rellax-speed="1")
-                        img.parallax__image(src=require('../../../img/bg/parallax/3.png'))
-                    .parallax__layer.rellax(data-rellax-speed="2")
-                        img.parallax__image(src=require('../../../img/bg/parallax/2.png'))
-                    .parallax__layer.rellax(data-rellax-speed="3")
-                        img.parallax__image(src=require('../../../img/bg/parallax/1.png'))
-                    .parallax__layer.rellax(data-rellax-speed="4")
-                        img.parallax__image(src=require('../../../img/bg/parallax/0.png'))
-                .container.header__container
-                    ul.header__socials.socials.socials__block
-                        li.socials__item
-                            a(href='#').socials__link
-                                svg.socials__icon.socials__icon_color_white
-                                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'vk')
-                        li.socials__item
-                            a(href='#').socials__link
-                                svg.socials__icon.socials__icon_color_white
-                                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'github')
-                        li.socials__item
-                            a(href='#').socials__link
-                                svg.socials__icon.socials__icon_color_white
-                                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in')
-                    a.header__hamburger.hamburger__button#hamButton(href='#')
-                        span
-                        span
-                        span
-                    .header__user.user-profile
-                        .user-profile__pic.user-profile__pic_margin_top
-                            img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
-                        span.header__title.title Блог
-                        span.header__desc Статьи, которые я написал
-                    svg.header__svg-icon.header__svg-icon_type_middle
-                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'blog_header')
-            .content
-                .triangle
-                    .triangle__left
-                    .triangle__right
-                .container
-                    aside#sidebar.sidebar
-                        nav.menu.sidebar__menu
-                            ul.sidebar__list
-                                li.sidebar__item
-                                    a.sidebar__link(href='#1') Самое важное в SASS
-                                li.sidebar__item
-                                    a.sidebar__link(href='#2') Самое важное в SASS
-                                li.sidebar__item
-                                    a.sidebar__link(href='#3') Самое важное в SASS
-                                li.sidebar__item
-                                    a.sidebar__link(href='#4') Приёмы в вёрстке, без которых не обходится ни один сайт
-                        a#sidebarButton.sidebar__button(href="")
-                    #article.article.article__col
-                        article.article__single
-                            h2.title__subtitle.article__title#1 Самое важное в SASS
-                            span.article__time 20 декабря 2017
-                            .article__text
-                                p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-                                p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-                            .articel__code
-                                code код
-                        article.article__single
-                            h2.title__subtitle.article__title#2 Самое важное в SASS
-                            span.article__time 20 декабря 2017
-                            .article__text
-                                p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-                                p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-                            .articel__code
-                                code код
-                        article.article__single
-                            h2.title__subtitle.article__title#3 Самое важное в SASS
-                            span.article__time 20 декабря 2017
-                            .article__text
-                                p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-                                p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-                        article.article__single
-                            h2.title__subtitle.article__title#4 Приёмы в вёрстке, без которых не обходится ни один сайт
-                            span.article__time 20 декабря 2017
-                            .article__text
-                                p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-                                p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-                            .articel__code
-                                code код
-            footer.footer
-                .container.footer__container
-                    .footer__row
-                        ul.footer__menu.menu.menu__list
-                            li.menu__item.menu__item_type_fixed-margin
-                                a(href='').menu__link.menu__link_color_white Мои работы
-                            li().menu__item.menu__item_type_fixed-margin
-                                a(href='').menu__link.menu__link_color_white Обо мне
-                            li.menu__item.menu__item_type_fixed-margin
-                                a(href='').menu__link.menu__link_color_white Блог
-                            li.menu__item.menu__item_type_fixed-margin
-                                a(href='').menu__link.menu__link_color_white Авторизация
-                        ul.footer__socials.socials.socials__block
-                            li.socials__item.socials__item_type_round
-                                a(href='#').socials__link
-                                    svg.socials__icon.socials__icon_type_round
-                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'vk_round')
-                            li.socials__item.socials__item_type_round
-                                a(href='#').socials__link
-                                    svg.socials__icon.socials__icon_type_round
-                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'github_round')
-                            li.socials__item.socials__item_type_round
-                                a(href='#').socials__link
-                                    svg.socials__icon.socials__icon_type_round
-                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in_round')
-                    .footer__row
-                        .footer__desc
-                            p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-                        .copyright.footer__copyright
-                            p © Владимир Астахов | создано с любовью в LoftSchool | 2016
-            ul.hambuger-menu.hamburger-menu__list
-                li.hamburger-menu__item
-                    a.hamburger-menu__link(href='./works.html') Мои работы
-                li.hamburger-menu__item
-                    a.hamburger-menu__link(href='./blog.html') Блог
-                li.hamburger-menu__item
-                    a.hamburger-menu__link(href='./about.html') Обо мне
-                li.hamburger-menu__item
-                    a.hamburger-menu__link(href='./index.html') Авторизация
+extends ../template
+block variables
+    - var title = 'Блог'
+block content
+    header.header
+        include ../../common/scroll-parallax
+        .container.header__container
+            svg.header__svg-icon.header__svg-icon_type_middle
+                use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'blog_header')
+            ul.header__socials.socials.socials__block
+                li.socials__item
+                    a(href='#').socials__link
+                        svg.socials__icon.socials__icon_color_white
+                            use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'vk')
+                li.socials__item
+                    a(href='#').socials__link
+                        svg.socials__icon.socials__icon_color_white
+                            use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'github')
+                li.socials__item
+                    a(href='#').socials__link
+                        svg.socials__icon.socials__icon_color_white
+                            use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in')
+            a.header__hamburger.hamburger__button#hamButton(href='#')
+                span
+                span
+                span
+            .header__user.user-profile
+                .user-profile__pic
+                    img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
+                span.user-profile__title_blog Блог
+                span.user-profile__desc Статьи, которые я написал
+    .content
+        .triangle
+            .triangle__left
+            .triangle__right
+        .container
+            aside#sidebar.sidebar
+                nav.menu.sidebar__menu
+                    ul.sidebar__list
+                        li.sidebar__item
+                            a.sidebar__link(href='#1') Самое важное в SASS
+                        li.sidebar__item
+                            a.sidebar__link(href='#2') Самое важное в SASS
+                        li.sidebar__item
+                            a.sidebar__link(href='#3') Самое важное в SASS
+                        li.sidebar__item
+                            a.sidebar__link(href='#4') Приёмы в вёрстке, без которых не обходится ни один сайт
+                a#sidebarButton.sidebar__button(href="")
+            #article.article.article__col
+                article.article__single
+                    h2.title__subtitle.article__title#1 Самое важное в SASS
+                    span.article__time 20 декабря 2017
+                    .article__text
+                        p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                        p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    .articel__code
+                        code код
+                article.article__single
+                    h2.title__subtitle.article__title#2 Самое важное в SASS
+                    span.article__time 20 декабря 2017
+                    .article__text
+                        p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                        p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    .articel__code
+                        code код
+                article.article__single
+                    h2.title__subtitle.article__title#3 Самое важное в SASS
+                    span.article__time 20 декабря 2017
+                    .article__text
+                        p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                        p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                article.article__single
+                    h2.title__subtitle.article__title#4 Приёмы в вёрстке, без которых не обходится ни один сайт
+                    span.article__time 20 декабря 2017
+                    .article__text
+                        p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                        p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    .articel__code
+                        code код
+    include ../../common/footer
+    include ../../common/hamburger

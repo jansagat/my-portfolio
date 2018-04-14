@@ -1,28 +1,3 @@
-.title {
-  @include bernier();
-  font-size: 63px;
-  color: $white;
-  display: flex;
-  align-items: center;
-  line-height: 1;
-
-  &:before {
-    content: '';
-    width: 22px;
-    height: 5px;
-    background: rgba($white, 0.2);
-    margin: 0 18px;
-  }
-
-  &:after {
-    content: '';
-    width: 22px;
-    height: 5px;
-    background: rgba($white, 0.2);
-    margin: 0 18px;
-  }
-}
-
 .title__subtitle {
   @include bernier();
   color: $darkBlue;

@@ -4,12 +4,6 @@
   min-height: 650px;
   height: 100%;
   position: relative;
-
-  &_type_blog {
-    //background: url(../img/bg/blog-bg.jpg);
-    //@include cover();
-    max-height: 401px;
-  }
 }
 
 //.header__overlay {
@@ -70,20 +64,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  &_move_top {
-    margin-top: -70px;
-  }
 }
 
 .header__hamburger {
   position: absolute;
   top: 45px;
   right: 30px;
-}
-
-.header__title {
-  margin-top: 10px;
 }
 
 .header__desc {

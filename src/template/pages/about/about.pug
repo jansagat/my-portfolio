@@ -1,198 +1,137 @@
-doctype html
-html
-    head
-        meta(charset='utf-8')
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        title Welcome to my portfolio
-    body
-        .wrapper
-            header.header.header__overlay
-                #parallax.parallax
-                    .parallax__layer.rellax(data-rellax-speed="-5")
-                        img.parallax__image(src=require('../../../img/bg/parallax/9.png'))
-                    .parallax__layer.rellax(data-rellax-speed="-4")
-                        img.parallax__image(src=require('../../../img/bg/parallax/8.png'))
-                    .parallax__layer.rellax(data-rellax-speed="-3")
-                        img.parallax__image(src=require('../../../img/bg/parallax/7.png'))
-                    .parallax__layer.rellax(data-rellax-speed="-2")
-                        img.parallax__image(src=require('../../../img/bg/parallax/6.png'))
-                    .parallax__layer.rellax(data-rellax-speed="-1")
-                        img.parallax__image(src=require('../../../img/bg/parallax/5.png'))
-                    .parallax__layer.rellax(data-rellax-speed="0")
-                        img.parallax__image(src=require('../../../img/bg/parallax/4.png'))
-                    .parallax__layer.rellax(data-rellax-speed="1")
-                        img.parallax__image(src=require('../../../img/bg/parallax/3.png'))
-                    .parallax__layer.rellax(data-rellax-speed="2")
-                        img.parallax__image(src=require('../../../img/bg/parallax/2.png'))
-                    .parallax__layer.rellax(data-rellax-speed="3")
-                        img.parallax__image(src=require('../../../img/bg/parallax/1.png'))
-                    .parallax__layer.rellax(data-rellax-speed="4")
-                        img.parallax__image(src=require('../../../img/bg/parallax/0.png'))
-                .container.header__container
-                    svg.header__svg-icon
-                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'portfolio_header')
-                    ul.header__socials.socials.socials__block
-                        li.socials__item
-                            a(href='#').socials__link
-                                svg.socials__icon.socials__icon_color_white
-                                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'vk')
-                        li.socials__item
-                            a(href='#').socials__link
-                                svg.socials__icon.socials__icon_color_white
-                                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'github')
-                        li.socials__item
-                            a(href='#').socials__link
-                                svg.socials__icon.socials__icon_color_white
-                                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in')
-                    a.header__hamburger.hamburger__button#hamButton(href='#')
-                        span
-                        span
-                        span
-                    .header__user.header__user_move_top.user-profile
-                        .user-profile__pic
-                            img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
-                        span.user-profile__name Владимир Астахов
-                        span.user-profile__desc Личный сайт веб разработчика
-                    a.header__arrow-down-link(href='#about')
-                        svg.header__arrow-down-icon
-                            use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'arrow_down')
-            .about
-                .triangle
-                    .triangle__left.triangle__left_about_page
-                    .triangle__right.triangle__right_about_page
-                .container.about__container#about
-                    .about__left
-                        .about__title-group
-                            svg.about__svg
-                                use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'about_header')
-                            span.about__title Обо мне
-                        .about__avatar
-                            img.about__user-img(src=require('../../../img/public/avatar.jpg') alt='avatar')
-                        span.about__title.about__title_sub.about__title_sub_type_margin Кто я
-                        .about__text.about__text_limit_width
-                            p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
-                    .about__right
-                        .about__title.about__title_sub
-                            p Чем я могу быть вам полезен
-                        .about__text
-                            p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-                        ul.skills.skills__list
-                            li.skills__item
-                                span.skills__title FrontEnd
-                                ul.skills__circle-list
-                                    li.skills__circle-item
-                                        .skills__gray-cirlce
-                                        span.skills__name HTML5
-                                        svg.skills__svg
-                                            use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-                                    li.skills__circle-item
-                                        .skills__gray-cirlce
-                                        span.skills__name CSS3
-                                        svg.skills__svg
-                                            use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-                                    li.skills__circle-item
-                                        .skills__gray-cirlce
-                                        span.skills__name JavaScript & jQuery
-                                        svg.skills__svg
-                                            use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-                            li.skills__item
-                                span.skills__title Backend
-                                ul.skills__circle-list
-                                    li.skills__circle-item
-                                        .skills__gray-cirlce
-                                        span.skills__name PHP
-                                        svg.skills__svg
-                                            use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-                                    li.skills__circle-item
-                                        .skills__gray-cirlce
-                                        span.skills__name MySQL
-                                        svg.skills__svg
-                                            use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-                                    li.skills__circle-item
-                                        .skills__gray-cirlce
-                                        span.skills__name Node.js & npm
-                                        svg.skills__svg
-                                            use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-                                    li.skills__circle-item
-                                        .skills__gray-cirlce
-                                        span.skills__name Mongo.db
-                                        svg.skills__svg
-                                            use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-                            li.skills__item
-                                span.skills__title Workflow
-                                ul.skills__circle-list
-                                    li.skills__circle-item
-                                        .skills__gray-cirlce
-                                        span.skills__name Git
-                                        svg.skills__svg
-                                            use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-                                    li.skills__circle-item
-                                        .skills__gray-cirlce
-                                        span.skills__name Gulp
-                                        svg.skills__svg
-                                            use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-                                    li.skills__circle-item
-                                        .skills__gray-cirlce
-                                        span.skills__name Webpack
-                                        svg.skills__svg
-                                            use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-            #map.map
-                .contacts
-                    span.contacts__title Контакты
-                    ul.contacts__list
-                        li.contacts__item
-                            svg.contacts__icon
-                                use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'skype')
-                            a.contacts__link(href='skype:skype_skype?call') skype_skype
-                        li.contacts__item
-                            svg.contacts__icon
-                                use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'envelope2')
-                            a.contacts__link(href='mailto:example@gmail.com') example@gmail.com
-                        li.contacts__item
-                            svg.contacts__icon
-                                use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'phone')
-                            a.contacts__link(href='tel:+77770000000') +77770000000
-                        li.contacts__item
-                            svg.contacts__icon
-                                use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'map_marker')
-                            a.contacts__link Новосибирск улица Пушкина
-            footer.footer
-                .container.footer__container
-                    .footer__row
-                        ul.footer__menu.menu.menu__list
-                            li.menu__item.menu__item_type_fixed-margin
-                                a(href='').menu__link.menu__link_color_white Мои работы
-                            li().menu__item.menu__item_type_fixed-margin
-                                a(href='').menu__link.menu__link_color_white Обо мне
-                            li.menu__item.menu__item_type_fixed-margin
-                                a(href='').menu__link.menu__link_color_white Блог
-                            li.menu__item.menu__item_type_fixed-margin
-                                a(href='').menu__link.menu__link_color_white Авторизация
-                        ul.footer__socials.socials.socials__block
-                            li.socials__item.socials__item_type_round
-                                a(href='#').socials__link
-                                    svg.socials__icon.socials__icon_type_round
-                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'vk_round')
-                            li.socials__item.socials__item_type_round
-                                a(href='#').socials__link
-                                    svg.socials__icon.socials__icon_type_round
-                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'github_round')
-                            li.socials__item.socials__item_type_round
-                                a(href='#').socials__link
-                                    svg.socials__icon.socials__icon_type_round
-                                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in_round')
-                    .footer__row
-                        .footer__desc
-                            p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-                        .copyright.footer__copyright
-                            p © Владимир Астахов | создано с любовью в LoftSchool | 2016
-            ul.hambuger-menu.hamburger-menu__list
-                li.hamburger-menu__item
-                    a.hamburger-menu__link(href='./works.html') Мои работы
-                li.hamburger-menu__item
-                    a.hamburger-menu__link(href='./blog.html') Блог
-                li.hamburger-menu__item
-                    a.hamburger-menu__link(href='./about.html') Обо мне
-                li.hamburger-menu__item
-                    a.hamburger-menu__link(href='./index.html') Авторизация
+extends ../template
+block variables
+    - var title = 'Обо мне'
+block content
+    header.header
+        include ../../common/scroll-parallax
+        .container.header__container
+            svg.header__svg-icon
+                use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'portfolio_header')
+            ul.header__socials.socials.socials__block
+                li.socials__item
+                    a(href='#').socials__link
+                        svg.socials__icon.socials__icon_color_white
+                            use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'vk')
+                li.socials__item
+                    a(href='#').socials__link
+                        svg.socials__icon.socials__icon_color_white
+                            use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'github')
+                li.socials__item
+                    a(href='#').socials__link
+                        svg.socials__icon.socials__icon_color_white
+                            use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'in')
+            a.header__hamburger.hamburger__button#hamButton(href='#')
+                span
+                span
+                span
+            .header__user.user-profile
+                .user-profile__pic
+                    img(src=require('../../../img/public/welcome-user.png') alt='user').user-profile__img
+                span.user-profile__title Владимир Астахов
+                span.user-profile__desc Личный сайт веб разработчика
+            a.header__arrow-down-link(href='#about')
+                svg.header__arrow-down-icon
+                    use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'arrow_down')
+    .about
+        .triangle
+            .triangle__left.triangle__left_about_page
+            .triangle__right.triangle__right_about_page
+        .container.about__container#about
+            .about__left
+                .about__title-group
+                    svg.about__svg
+                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'about_header')
+                    span.about__title Обо мне
+                .about__avatar
+                    img.about__user-img(src=require('../../../img/public/avatar.jpg') alt='avatar')
+                span.about__title.about__title_sub.about__title_sub_type_margin Кто я
+                .about__text.about__text_limit_width
+                    p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+            .about__right
+                .about__title.about__title_sub
+                    p Чем я могу быть вам полезен
+                .about__text
+                    p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                ul.skills.skills__list
+                    li.skills__item
+                        span.skills__title FrontEnd
+                        ul.skills__circle-list
+                            li.skills__circle-item
+                                .skills__gray-cirlce
+                                span.skills__name HTML5
+                                svg.skills__svg
+                                    use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
+                            li.skills__circle-item
+                                .skills__gray-cirlce
+                                span.skills__name CSS3
+                                svg.skills__svg
+                                    use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
+                            li.skills__circle-item
+                                .skills__gray-cirlce
+                                span.skills__name JavaScript & jQuery
+                                svg.skills__svg
+                                    use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
+                    li.skills__item
+                        span.skills__title Backend
+                        ul.skills__circle-list
+                            li.skills__circle-item
+                                .skills__gray-cirlce
+                                span.skills__name PHP
+                                svg.skills__svg
+                                    use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
+                            li.skills__circle-item
+                                .skills__gray-cirlce
+                                span.skills__name MySQL
+                                svg.skills__svg
+                                    use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
+                            li.skills__circle-item
+                                .skills__gray-cirlce
+                                span.skills__name Node.js & npm
+                                svg.skills__svg
+                                    use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
+                            li.skills__circle-item
+                                .skills__gray-cirlce
+                                span.skills__name Mongo.db
+                                svg.skills__svg
+                                    use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
+                    li.skills__item
+                        span.skills__title Workflow
+                        ul.skills__circle-list
+                            li.skills__circle-item
+                                .skills__gray-cirlce
+                                span.skills__name Git
+                                svg.skills__svg
+                                    use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
+                            li.skills__circle-item
+                                .skills__gray-cirlce
+                                span.skills__name Gulp
+                                svg.skills__svg
+                                    use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
+                            li.skills__circle-item
+                                .skills__gray-cirlce
+                                span.skills__name Webpack
+                                svg.skills__svg
+                                    use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
+    #map.map
+        .contacts
+            span.contacts__title Контакты
+            ul.contacts__list
+                li.contacts__item
+                    svg.contacts__icon
+                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'skype')
+                    a.contacts__link(href='skype:skype_skype?call') skype_skype
+                li.contacts__item
+                    svg.contacts__icon
+                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'envelope2')
+                    a.contacts__link(href='mailto:example@gmail.com') example@gmail.com
+                li.contacts__item
+                    svg.contacts__icon
+                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'phone')
+                    a.contacts__link(href='tel:+77770000000') +77770000000
+                li.contacts__item
+                    svg.contacts__icon
+                        use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'map_marker')
+                    a.contacts__link Новосибирск улица Пушкина
+    include ../../common/footer
+    include ../../common/hamburger

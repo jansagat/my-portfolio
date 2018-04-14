@@ -1,0 +1,14 @@
+block variables
+doctype html
+html
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(charset='utf-8')
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        title #{title || 'Портфолио'}
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
+    body
+        .wrapper
+            block content
