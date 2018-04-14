@@ -58,7 +58,8 @@ const sidebar = {
     },
     handleClick(e) {
         if (window.innerWidth <= 768) {
-            let clickToSidebar = e.path.filter(item => item.id === 'sidebar');
+            let eventPath =  e.path || (e.composedPath && e.composedPath()) || composedPath(e.target);
+            let clickToSidebar = eventPath.filter(item => item.id === 'sidebar');
             let sideBarOpen = this.sidebar.classList.contains('sidebar-open');
 
             if (clickToSidebar.length === 0 && sideBarOpen === true) {
