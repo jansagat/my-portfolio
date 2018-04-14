@@ -6,6 +6,10 @@
   transition: .5s ease-in-out;
   cursor: pointer;
   z-index: 1000;
+
+  &.open {
+    position: fixed;
+  }
 }
 
 .hamburger__button span {
