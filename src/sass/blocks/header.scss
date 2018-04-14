@@ -81,6 +81,10 @@
   height: 18px;
   fill: $white;
   fill-opacity: .7;
+
+  &:hover {
+    fill-opacity: 1;
+  }
 }
 
 .header__arrow-down-link {

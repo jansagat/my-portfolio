@@ -53,12 +53,12 @@ block content
                 .slider__pic
                     img.slider__img#sliderImg(src=require('sliderImg/1.png') alt='my works')
                 .slider__arrows
-                    .slider__down-arrow#downArrow
-                        svg.slider__svg-arrow-down
+                    .slider__down-arrow
+                        svg.slider__svg-arrow-down#downArrow
                             use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'portf_arrow_down')
                         img.slider__arrow-background#sliderPrevImg(src=require('../../../img/public/slider/2.jpg') alt='down')
-                    .slider__up-arrow#upArrow
-                        svg.slider__svg-arrow-up
+                    .slider__up-arrow
+                        svg.slider__svg-arrow-up#upArrow
                             use(xlink:href=require('../../../img/svg/sprite.svg') + '#' + 'portf_arrow_up')
                         img.slider__arrow-background#sliderNextImg(src=require('../../../img/public/slider/3.jpg') alt='up')
     section.section.review

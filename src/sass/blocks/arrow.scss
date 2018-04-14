@@ -9,4 +9,8 @@
   fill: $white;
   fill-opacity: .7;
   transform: rotateX(180deg);
+
+  &:hover {
+    fill-opacity: 1;
+  }
 }

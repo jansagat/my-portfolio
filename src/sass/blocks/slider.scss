@@ -82,6 +82,11 @@
   padding: 10px 20px;
   background: $green;
   border-radius: 4px;
+  transition: background .3s;
+
+  &:hover {
+    background: $darkGreen;
+  }
 }
 
 .slider__link-svg {
@@ -103,6 +108,7 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 .slider__down-arrow,
@@ -114,6 +120,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  user-select: none;
 }
 
 .slider__down-arrow {
