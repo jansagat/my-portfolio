@@ -113,7 +113,8 @@ block content
                                 span.skills__name Webpack
                                 svg.skills__svg(data-percent='90')
                                     use(xlink:href=require('../../../img/svg/circle.svg') + '#' + 'skill_circle')
-    #map.map
+    .map
+        #map
         .contacts
             span.contacts__title Контакты
             ul.contacts__list
@@ -135,3 +136,4 @@ block content
                     a.contacts__link Новосибирск улица Пушкина
     include ../../common/footer
     include ../../common/hamburger
+    include ../../pages/other/google-map
