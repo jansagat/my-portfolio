@@ -1,7 +1,7 @@
 .slider__arrows {
   display: flex;
   width: 50%;
-  flex: 1 1 30%;
+  flex: 1 1 25%;
 
   @include tablets() {
     display: flex;
@@ -21,6 +21,10 @@
   margin-bottom: 35px;
   line-height: 39px;
   text-align: center;
+
+  @include tablets() {
+    margin: 0 0 20px 0;
+  }
 
   &:before {
     content: '';
@@ -51,6 +55,10 @@
   width: 100%;
   text-align: center;
   margin-bottom: 35px;
+
+  @include tablets() {
+    margin-bottom: 20px;
+  }
 
   &:before {
     content: '';
@@ -167,6 +175,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  -moz-user-select: none;
+  user-select: none;
 
   @include tablets() {
     order: 2;
@@ -182,7 +192,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 1 70%;
+  flex: 1 1 65%;
 
   @include tablets() {
     width: 100%;

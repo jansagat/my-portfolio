@@ -70,6 +70,7 @@
   @include tablets() {
     background: #eeebdf;
     z-index: -50;
+    margin-left: 0;
   }
 }
 
