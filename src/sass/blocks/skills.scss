@@ -35,12 +35,11 @@
   width: 110px;
   height: 110px;
   fill: transparent;
-  stroke: $green;
-  stroke-opacity: .9;
-  stroke-width: 20;
+  stroke: #dfdcd5;
+  stroke-width: 21px;
   stroke-dasharray: 283;
-  stroke-dashoffset: -80;
-  transition: stroke-dashoffset 1s;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 2s cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .skills__name {
@@ -59,11 +58,11 @@
   align-items: center;
 }
 
-.skills__gray-cirlce {
+.skills__green-cirlce {
   position: absolute;
   top: 0;
   left: 0;
-  border: 20px solid #dfdcd5;
+  border: 20px solid #00bfa5;
   border-radius: 50%;
   width: 110px;
   height: 110px;
