@@ -1,9 +1,12 @@
 .header {
-  //background: url(../img/bg/header-bg.jpg);
-  //@include cover();
   min-height: 650px;
   height: 100%;
   position: relative;
+
+  &__bg {
+    background: url(../img/bg/header-bg.jpg);
+    @include cover();
+  }
 }
 
 //.header__overlay {
