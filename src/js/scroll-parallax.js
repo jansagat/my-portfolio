@@ -10,15 +10,7 @@ import Rellax from 'rellax';
     });
 
     window.addEventListener('DOMContentLoaded', function () {
-        if (window.innerWidth > 768) {
-            let images = document.getElementsByClassName('parallax__image');
-            for (let i = 0; i < images.length; i++) {
-                images[i].src = images[i].dataset.image
-            }
-        } else {
-            let header = document.querySelector('.header');
-            header.classList.add('header__bg');
-
+        if (window.innerWidth <= 768) {
             rellax.destroy();
         }
     });
