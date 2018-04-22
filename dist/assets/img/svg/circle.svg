@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg">
-        <symbol viewBox="10 10 110 110" id="skill_circle" xmlns="http://www.w3.org/2000/svg">
-            <path transform="rotate(90, 65, 65)" fill-rule="evenodd" clip-rule="evenodd" d="M20,65a45,45 0 1,0 90,0a45,45 0 1,0 -90,0"/>
-        </symbol>
-</svg>
